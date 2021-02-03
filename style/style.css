@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 100px auto;
+    width: 1000px;
+    min-height: 400px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
