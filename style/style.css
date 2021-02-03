@@ -14,14 +14,96 @@ body {
     padding: 0;
 }
 
-.container {
-    margin: 100px auto;
-    width: 1000px;
-    min-height: 400px;
-    border: 1px solid black;
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
+.music-search {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orangered;
+    padding: 50px;
+}
 
+.search-box {
+    display: flex;
+    border: 2px solid green;
+    padding: 10px;
+    background-color: orange;
+    margin-bottom: 50px;
+}
+
+input {
+    flex-grow: 5;
+    padding: 10px;
+    font-size: 25px;
+}
+
+button {
+    flex-grow: 1;
+    font-size: 25px;
+
+}
+
+.music-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.music-list li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 1;
+    padding: 15px;
+    border: 1px solid green;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    max-width: 350px;
+    min-height: 350px;
+    /*background-image: url('https://picsum.photos/400');*/
+}
+
+.music-list li:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.music-list li h3,
+.music-list li a,
+.music-list li div {
+    position: relative;
+    z-index: 2;
+}
+
+.music-list li div {
+    margin-top: auto;
+}
+
+.music-list li h3 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
 
 
 
